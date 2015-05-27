@@ -1,19 +1,19 @@
 # FileInOut
 
-# Descripción
+## Descripción
 
 Con esta clase de PHP podemos obtener los datos en formato Array de un archivo .in y configurar el formato que queramos que tenga el Array.
 
 Con esta clase de PHP podemos crear un archivo .out enviándole un parámetro tipo String a la función encargada.
 
-# Description
+## Description
 
 With this kind of PHP we can get the data into a format Array .in file and set the format you want to have the Array.
 
 With this kind of PHP we can create a .out file sent to you one type String parameter to the function responsible.
 
-# Example of use 
-
+## Example of use 
+```PHP
 $arrDatos = GenerateInOut::getFileInToArray('A-small-practice.in', array('first' => 1,'data'  => 3,));
 $strResult = '';
 foreach ($arrDatos['data'] as $i => $arrDato) {
@@ -41,3 +41,4 @@ foreach ($arrDatos['data'] as $i => $arrDato) {
     }
 }
 echo GenerateInOut::setStringOutFile($strResult);
+```
